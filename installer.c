@@ -55,12 +55,12 @@ int main() {
             switch (confirmation) {
                 case '1':
                     system("yay -S --noconfirm noctalia");
-                    system("echo 'spawn-sh-at-startup \"qs -c noctalia-shell\"' >> ~/.config/niri/cfg/autostart.kdl");
+                    system("echo 'spawn-sh-at-startup \"qs -c noctalia-shell\"' >> ~/.config/niri/config.kdl");
                     printf("\nAdded Noctalia to autostart!\n");
                     break;
                 case '2':
                     system("yay -S --noconfirm caelestia-shell");
-                    system("echo 'spawn-sh-at-startup \"caelestia shell\"' >> ~/.config/niri/cfg/autostart.kdl");
+                    system("echo 'spawn-sh-at-startup \"caelestia shell\"' >> ~/.config/niri/config.kdl");
                     printf("\nAdded caelestia shell to autostart!\n");
                     break;
             }
